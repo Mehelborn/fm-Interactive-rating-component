@@ -1,0 +1,73 @@
+/* mobile design */
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+  display: flex;
+  height: 100vh;
+  align-items: center;  
+}
+
+h1 {
+  font-weight: 700;
+  color: white ;
+  margin: 0;
+  padding: 5% 0;
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  margin: 0;
+  padding: 0 0 10%;
+  line-height: 1.5;
+}
+
+.card {
+  background-color: #1C232D;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  padding: 6%;
+  border-radius: 5%;
+}
+
+.btnstar {
+  background-color: #262F38;
+  align-self: flex-start;
+  padding: 5%;
+  border-radius: 90%;   
+}
+
+.btn {
+  border: none;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grades {
+  background-color: #262F38;
+  color: #888F9D;
+  border-radius: 90%;
+  padding: 4%;
+  width: 13%;
+}
+
+.submit {
+  background-color: #FC7613;
+  color: #FFEEC2;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  border-radius: 20px;
+  padding: 5%;
+  margin-top: 10%;
+}
+
+.attribution {
+  display: none;
+}
