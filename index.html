@@ -28,29 +28,38 @@
   </head>
   <body>
     <main class="card">
-      <button disabled="disabled" class="btn btnstar">
-        <img src="images/icon-star.svg" alt="" class="star"/>
-      </button>
-      <h1>How did we do?</h1>
-      <p>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </p>
-      <div class="rating">
-        <button class="btn grades">1</button>
-        <button class="btn grades">2</button>
-        <button class="btn grades">3</button>
-        <button class="btn grades">4</button>
-        <button class="btn grades">5</button>
+      <div class="rate-state">
+        <button disabled="disabled" class="btn btnstar">
+          <img src="images/icon-star.svg" alt="star picture" class="star" />
+        </button>
+        <h1>How did we do?</h1>
+        <p class="rate-paragraph">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating">
+          <button class="btn grades">1</button>
+          <button class="btn grades">2</button>
+          <button class="btn grades">3</button>
+          <button class="btn grades">4</button>
+          <button class="btn grades">5</button>
+        </div>
+        <button class="btn submit">SUBMIT</button>
       </div>
-      <button class="btn submit">SUBMIT</button>
-    </main>
-    <!-- You selected -->
-    <!-- Add rating here -->
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
 
-    <footer class="attribution">
+      <div class="ty-state hide">
+        <img src="images/illustration-thank-you.svg" alt="smartphone picture" class="ty-image" />
+        <button disabled="disabled" class="ty-heading">
+          You selected <span id="rate" class="hide"></span> out of 5 Thank you!
+        </button>
+        <p class="ty-paragraph">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+
+    <footer class="attribution hide">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a

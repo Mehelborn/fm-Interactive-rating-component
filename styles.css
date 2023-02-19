@@ -1,5 +1,6 @@
 /* mobile design */
 
+/* rate-state */
 body {
   background-color: hsl(216, 12%, 8%);
   font-family: 'Overpass', sans-serif;
@@ -15,7 +16,7 @@ h1 {
   padding: 5% 0;
 }
 
-p {
+.rate-paragraph {
   font-weight: 400;
   font-size: 15px;
   color: hsl(217, 12%, 63%);
@@ -25,12 +26,15 @@ p {
 }
 
 .card {
-  background-color: #1C232D;
-  display: flex;
-  flex-direction: column;
+  background-color: #1C232D;  
   margin: 5%;
   padding: 6%;
   border-radius: 5%;
+}
+
+.rate-state {
+  display: flex;
+  flex-direction: column;  
 }
 
 .btnstar {
@@ -68,6 +72,21 @@ p {
   margin-top: 10%;
 }
 
-.attribution {
+/* ty-state */
+.ty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+}
+
+.ty-heading {
+  color: #FC7613;
+}
+
+.ty-paragraph {
+  text-align: center;
+}
+
+.hide {
   display: none;
 }
