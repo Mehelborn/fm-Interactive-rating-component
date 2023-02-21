@@ -3,17 +3,29 @@
 /* rate-state */
 body {
   background-color: hsl(216, 12%, 8%);
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
   display: flex;
   height: 100vh;
-  align-items: center;  
+  align-items: center;
 }
 
 h1 {
   font-weight: 700;
-  color: white ;
+  color: white;
   margin: 0;
   padding: 5% 0;
+}
+
+label {
+  background-color: #262f38;
+  color: #888f9d;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
 .rate-paragraph {
@@ -26,7 +38,7 @@ h1 {
 }
 
 .card {
-  background-color: #1C232D;  
+  background-color: #1c232d;
   margin: 5%;
   padding: 6%;
   border-radius: 5%;
@@ -34,14 +46,14 @@ h1 {
 
 .rate-state {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .btnstar {
-  background-color: #262F38;
+  background-color: #262f38;
   align-self: flex-start;
   padding: 5%;
-  border-radius: 90%;   
+  border-radius: 90%;
 }
 
 .btn {
@@ -53,17 +65,9 @@ h1 {
   justify-content: space-between;
 }
 
-.grades {
-  background-color: #262F38;
-  color: #888F9D;
-  border-radius: 90%;
-  padding: 4%;
-  width: 13%;
-}
-
 .submit {
-  background-color: #FC7613;
-  color: #FFEEC2;
+  background-color: #fc7613;
+  color: #ffeec2;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 3px;
@@ -76,17 +80,119 @@ h1 {
 .ty-state {
   display: flex;
   flex-direction: column;
-  align-items: center;      
+  align-items: center;
+}
+
+.ty-image {
+  margin-top: 5%;
+}
+
+.ty-selected-rating {
+  color: #fc7613;
+  background-color: #262f38;
+  border: none;
+  border-radius: 10px;
+  padding: 2%;
+  margin-top: 10%;
 }
 
 .ty-heading {
-  color: #FC7613;
+  color: white;
+  margin-top: 7%;
 }
 
 .ty-paragraph {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
   text-align: center;
 }
 
 .hide {
   display: none;
+}
+
+/* desktop design */
+@media screen and (min-width: 1024px) {
+  body {
+    justify-content: center;
+  }
+
+  label {
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
+  }
+
+  .card {
+    height: 55%;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rate-state {
+    padding: 10%;
+  }
+
+  .submit {
+    font-size: 1.1rem;
+    padding: 4%;
+  }
+
+  .ty-selected-rating {
+    width: 45%;
+    font-size: 1rem;
+  }
+
+  .ty-heading {
+    padding-bottom: 3%;
+    margin-top: 3%;
+  }
+
+  .ty-paragraph {
+    margin-top: 0;
+    padding: 0 7%;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 665px) {
+  label {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .rate-paragraph {
+    padding: 0 0 5%;
+    line-height: 1;
+  } 
+  
+  .submit {
+    margin-top: 5%;
+  }
+
+  .ty-image {
+    margin: 0;
+  }
+
+  .ty-selected-rating {
+    margin-top: 5%;
+  }
+}
+
+/* pseudoclasses */
+.submit:hover {
+  background-color: white;
+  color: #fc7613;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #7b8898;
+  color: white;
+}
+
+input[type="radio"]:hover + label {
+  background-color: #fc7614;
+  color: white;
 }
