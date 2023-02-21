@@ -38,20 +38,34 @@
           is appreciated to help us improve our offering!
         </p>
         <div class="rating">
-          <button class="btn grades">1</button>
-          <button class="btn grades">2</button>
-          <button class="btn grades">3</button>
-          <button class="btn grades">4</button>
-          <button class="btn grades">5</button>
+          <input type="radio" class="hide grades" id="radio1" name="radios" value="1" />
+          <label for="radio1">1</label>
+
+          <input type="radio" class="hide grades" id="radio2" name="radios" value="2" />
+          <label for="radio2">2</label>
+
+          <input type="radio" class="hide grades" id="radio3" name="radios" value="3" />
+          <label for="radio3">3</label>
+
+          <input type="radio" class="hide grades" id="radio4" name="radios" value="4" />
+          <label for="radio4">4</label>
+
+          <input type="radio" class="hide grades" id="radio5" name="radios" value="5" />
+          <label for="radio5">5</label>
         </div>
         <button class="btn submit">SUBMIT</button>
       </div>
 
       <div class="ty-state hide">
-        <img src="images/illustration-thank-you.svg" alt="smartphone picture" class="ty-image" />
-        <button disabled="disabled" class="ty-heading">
-          You selected <span id="rate" class="hide"></span> out of 5 Thank you!
+        <img
+          src="images/illustration-thank-you.svg"
+          alt="smartphone picture"
+          class="ty-image"
+        />
+        <button disabled="disabled" class="ty-selected-rating">
+          You selected <span id="rate" class="hide"></span> out of 5
         </button>
+        <h1 class="ty-heading">Thank you!</h1>
         <p class="ty-paragraph">
           We appreciate you taking the time to give a rating. If you ever need
           more support, don’t hesitate to get in touch!
